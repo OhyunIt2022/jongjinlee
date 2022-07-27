@@ -8,7 +8,12 @@ option = input()
 print(option)
 
 if option == '1':
-    print("아직 구현 안함")
+    newmemo = input("메모를 입력해주세요 \n")
+    print(newmemo)
+    filename = 'memo.txt'
+    f = open(filename, 'a')
+    f.write(newmemo)
+    f.close(1)
 elif option == '2':
     f = open('memo2.txt')
     memo = f.read()
